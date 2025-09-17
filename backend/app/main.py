@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from app.routes import image_routes
 
+app = FastAPI()
+
 def create_app() -> FastAPI:
     app = FastAPI(
         title='Haircut API',
